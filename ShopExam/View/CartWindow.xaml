@@ -1,0 +1,40 @@
+﻿<Window x:Class="ShopExam.View.CartWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        mc:Ignorable="d"
+        Title="CartWindow" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <ListBox ItemsSource="{Binding CartList}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Text="{Binding Name}" FontWeight="Bold" />
+                        <TextBlock Text="{Binding SinglePrice, StringFormat='Цена: {0} лв.'}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <TextBlock Grid.Row="1"
+               Text="{Binding TotalPrice, StringFormat=Обща сума: {0} лв.}"
+               FontSize="14"
+               FontWeight="Bold"
+               HorizontalAlignment="Center"
+               Margin="0,10,0,0" />
+        
+        <Button Grid.Row="2"
+                Content="Завърши поръчка"
+                Command="{Binding CreateOrderCommand}"
+                FontSize="14"
+                FontWeight="Bold"
+                HorizontalAlignment="Center"
+                Margin="0,10,0,0" />
+    </Grid>
+</Window>
