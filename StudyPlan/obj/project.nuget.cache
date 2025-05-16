@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "dgSpecHash": "TVV6O6Woc3Q=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Angel\\Desktop\\Projects - Git\\PsPrep\\StudyPlan\\StudyPlan.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Angel\\.nuget\\packages\\microsoft.data.sqlite.core\\9.0.4\\microsoft.data.sqlite.core.9.0.4.nupkg.sha512",
+    "C:\\Users\\Angel\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.4\\microsoft.entityframeworkcore.9.0.4.nupkg.sha512",
+    "C:\\Users\\Angel\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.4\\microsoft.entityframeworkcore.abstractions.9.0.4.nupkg.sha512",
+    "C:\\Users\\Angel\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\9.0.4\\microsoft.entityframeworkcore.analyzers.9.0.4.nupkg.sha512",
+    "C:\\Users\\Angel\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\9.0.4\\microsoft.entityframeworkcore.relational.9.0.4.nupkg.sha512",
+    "C:\\Users\\Angel\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\9.0.4\\microsoft.entityframeworkcore.sqlite.9.0.4.nupkg.sha512",
+    "C:\\Users\\Angel\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite.core\\9.0.4\\microsoft.entityframeworkcore.sqlite.core.9.0.4.nupkg.sha512",
+    "C:\\Users\\Angel\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\9.0.4\\microsoft.extensions.caching.abstractions.9.0.4.nupkg.sha512",
+    "C:\\Users\\Angel\\.nuget\\packages\\microsoft.extensions.caching.memory\\9.0.4\\microsoft.extensions.caching.memory.9.0.4.nupkg.sha512",
+    "C:\\Users\\Angel\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.4\\microsoft.extensions.configuration.abstractions.9.0.4.nupkg.sha512",
+    "C:\\Users\\Angel\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.4\\microsoft.extensions.dependencyinjection.9.0.4.nupkg.sha512",
+    "C:\\Users\\Angel\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.4\\microsoft.extensions.dependencyinjection.abstractions.9.0.4.nupkg.sha512",
+    "C:\\Users\\Angel\\.nuget\\packages\\microsoft.extensions.dependencymodel\\9.0.4\\microsoft.extensions.dependencymodel.9.0.4.nupkg.sha512",
+    "C:\\Users\\Angel\\.nuget\\packages\\microsoft.extensions.logging\\9.0.4\\microsoft.extensions.logging.9.0.4.nupkg.sha512",
+    "C:\\Users\\Angel\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\9.0.4\\microsoft.extensions.logging.abstractions.9.0.4.nupkg.sha512",
+    "C:\\Users\\Angel\\.nuget\\packages\\microsoft.extensions.options\\9.0.4\\microsoft.extensions.options.9.0.4.nupkg.sha512",
+    "C:\\Users\\Angel\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.4\\microsoft.extensions.primitives.9.0.4.nupkg.sha512",
+    "C:\\Users\\Angel\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.10\\sqlitepclraw.bundle_e_sqlite3.2.1.10.nupkg.sha512",
+    "C:\\Users\\Angel\\.nuget\\packages\\sqlitepclraw.core\\2.1.10\\sqlitepclraw.core.2.1.10.nupkg.sha512",
+    "C:\\Users\\Angel\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.10\\sqlitepclraw.lib.e_sqlite3.2.1.10.nupkg.sha512",
+    "C:\\Users\\Angel\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.10\\sqlitepclraw.provider.e_sqlite3.2.1.10.nupkg.sha512",
+    "C:\\Users\\Angel\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\Angel\\.nuget\\packages\\system.text.json\\9.0.4\\system.text.json.9.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}

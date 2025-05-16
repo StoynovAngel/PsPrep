@@ -1,0 +1,59 @@
+﻿<Window x:Class="Football.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Football"
+        xmlns:vm="clr-namespace:Football.ViewModel"
+        d:DataContext="{d:DesignInstance vm:MainWindowVM}"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <Label Content="Football Match" HorizontalAlignment="Center"/>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Label Content="Home:"/>
+            <Label x:Name="lb1" Content="{Binding DisplayMatch.HomeTeam}"/>
+        </StackPanel>
+        
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Label Content="Away:"/>
+            <Label x:Name="lb2" Content="{Binding DisplayMatch.ForeignTeam}"/>
+        </StackPanel>
+        
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Label Content="Date:"/>
+            <Label x:Name="lb3" Content="{Binding DisplayMatch.Start}"/>
+        </StackPanel>
+        
+        
+        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Label  Content="Hour:"/>
+            <Label x:Name="lb4" Content="{Binding DisplayMatch.Start.Hour}"/>
+        </StackPanel>
+        
+        <StackPanel Grid.Row="5" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Label Content="Home score:"/>
+            <TextBox x:Name="tb1" Text="{Binding DisplayMatch.ScoreHome, Mode=OneWay}" IsReadOnly="True" />
+        </StackPanel>
+        
+        <StackPanel Grid.Row="6" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Label Content="Foreign score:"/>
+            <TextBox x:Name="tb2" Text="{Binding DisplayMatch.ScoreForeign, Mode=OneWay}" IsReadOnly="True" />
+        </StackPanel>
+        
+        <Label x:Name="WinLabel" Grid.Row="7" HorizontalAlignment="Center" Content="{Binding WinnerStatus}"/>
+        <Button Grid.Row="8" Width="100" Height="50" Content="Number of wins" Command="{Binding WinCountCommand}"/>
+    </Grid>
+</Window>
