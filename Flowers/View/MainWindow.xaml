@@ -1,0 +1,39 @@
+﻿<Window x:Class="Flowers.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Flowers"
+        xmlns:vm="clr-namespace:Flowers.ViewModel"
+        d:DataContext="{d:DesignInstance vm:DeliveryViewModel}"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Label Content="Достовка №:"/>
+            <TextBlock Text="{Binding FlowerDelivery.Id}"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Left">
+            <Label Content="Address:"/>
+            <TextBlock Text="{Binding FlowerDelivery.Address}"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Left">
+            <Label Content="Phone:"/>
+            <TextBlock Text="{Binding FlowerDelivery.Phone}"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Left">
+            <Label Content="Delivery date:"/>
+            <DatePicker Text="{Binding FlowerDelivery.DeliveryDate}"/>
+        </StackPanel>
+        <Button Grid.Row="4" Height="50" Width="200" HorizontalAlignment="Center" Content="Доставка" Command="{Binding Delivered}"/>
+        <TextBlock Grid.Row="5" Text="{Binding Amount}"/>
+    </Grid>
+</Window>

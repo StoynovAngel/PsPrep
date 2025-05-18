@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flowers", "Flowers.csproj", "{12D1C01E-4995-43FB-BB7C-CEEEB5C98F15}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12D1C01E-4995-43FB-BB7C-CEEEB5C98F15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12D1C01E-4995-43FB-BB7C-CEEEB5C98F15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12D1C01E-4995-43FB-BB7C-CEEEB5C98F15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12D1C01E-4995-43FB-BB7C-CEEEB5C98F15}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
