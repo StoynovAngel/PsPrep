@@ -1,0 +1,46 @@
+﻿<Window x:Class="ProductDiscount.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProductDiscount"
+        xmlns:vm="clr-namespace:ProductDiscount.ViewModel"
+        d:DataContext="{d:DesignInstance vm:MainWindowVM}"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="10">
+            <Label Content="Избран продукт:" />
+
+            <TextBox Text="{Binding SearchQuery, UpdateSourceTrigger=PropertyChanged}" Margin="0 5"/>
+
+            <Label Content="Product Name:" />
+            <Label Content="{Binding SelectedP.Name}" />
+
+            <Label Content="Product Type:" />
+            <Label Content="{Binding SelectedP.Type}" />
+
+            <Label Content="Regular Price:" />
+            <Label Content="{Binding SelectedP.RegularPrice}" />
+
+            <Label Content="Discount Percentage:" />
+            <Label Content="{Binding SelectedP.Disc.DiscountPerc}" />
+
+            <Label Content="Discount Valid Until:" />
+            <Label Content="{Binding SelectedP.Disc.ValidUntil}" />
+            
+            <Label Content="{Binding Paco}"/>
+            
+            <Label Content="Discount:" />
+            <ListBox ItemsSource="{Binding Products}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Border Background="{Binding BackgroundColor}" Padding="5" Margin="2">
+                            <TextBlock Text="{Binding Name}" />
+                        </Border>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
+    </Grid>
+</Window>

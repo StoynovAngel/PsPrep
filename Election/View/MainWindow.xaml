@@ -1,0 +1,37 @@
+﻿<Window x:Class="Election.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Election"
+        xmlns:vm="clr-namespace:Election.ViewModel"
+        d:DataContext="{d:DesignInstance vm:VotingViewModel}"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <Label Content="Electronic Voting Results" HorizontalAlignment="Center" FontSize="24"/>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="10">
+            <Label Content="Votes for:"/>
+            <ProgressBar  Minimum="0" Maximum="5" Value="{Binding ForVotes, Mode=OneWay}" Width="100"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="10">
+            <Label Content="Votes against:"/>
+            <ProgressBar Minimum="0" Maximum="5" Value="{Binding AgainstVotes, Mode=OneWay}" Width="100"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Orientation="Horizontal" Margin="10">
+            <Label Content="Votes abstained:" />
+            <ProgressBar  Minimum="0" Maximum="5" Value="{Binding AbstainVotes, Mode=OneWay}" Width="100"/>
+        </StackPanel>
+        <StackPanel Grid.Row="4" Orientation="Horizontal" Margin="10">
+            <Label Content="{Binding Deadline}" Width="100" />
+        </StackPanel>
+    </Grid>
+</Window>
