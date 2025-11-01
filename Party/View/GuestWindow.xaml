@@ -18,9 +18,8 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-
-        <Label Content="Guests" HorizontalAlignment="Center" FontSize="32" />
-        <ListBox Grid.Row="1" ItemsSource="{Binding Request.Guests}" Margin="10"
+        
+        <ListBox Grid.Row="1" ItemsSource="{Binding Request.Guests}" Margin="10" 
                  ScrollViewer.VerticalScrollBarVisibility="Auto">
             <ListBox.ItemTemplate>
                 <DataTemplate>

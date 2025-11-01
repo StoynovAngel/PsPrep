@@ -40,6 +40,5 @@ public partial class MainWindow : Window
         };
         var vm = new ViewModel.ViewModel(r);
         DataContext = vm;
-        
     }
 }

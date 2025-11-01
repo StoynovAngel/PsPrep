@@ -34,14 +34,21 @@ public class MainWindowVm : INotifyPropertyChanged
         {
             StringBuilder sb = new StringBuilder();
             int numberToBeDisplayed = 0;
+            string figureColor;
             for (var i = 0; i < Game.Moves.Count; i++)
             {
                 numberToBeDisplayed = i + 1;
-                sb.Append("Ход: " + numberToBeDisplayed + " от " + Game.Moves[i].StartPos + " на " + Game.Moves[i].EndPos + "\n");
+                figureColor = IsFigureWhite(i + 1) ? "white" : "black"; 
+                sb.Append("Ход: " + numberToBeDisplayed + " color: " + figureColor + " от " + Game.Moves[i].StartPos + " на " + Game.Moves[i].EndPos + "\n");
             }
 
             return sb.ToString();
         }
+    }
+
+    private bool IsFigureWhite(int number)
+    {
+        return number % 2 != 0;
     }
 
     public ChessGame Game { get; }
@@ -63,8 +70,11 @@ public class MainWindowVm : INotifyPropertyChanged
     public string? GetBlackQueenFirstMove()
     {
         List<Move> moves = Game.Moves;
-        return (from move in moves where move.StartPos == "d1" select move.EndPos).FirstOrDefault();
+        // return (from move in moves where move.StartPos == "d1" select move.EndPos).FirstOrDefault();
+        return moves.Where(move => move.StartPos.Equals("d1")).ToString();
     }
+    
+    
     
     public class RelayCommand : ICommand
     {

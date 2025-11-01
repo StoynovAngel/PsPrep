@@ -52,11 +52,11 @@ public class ViewModel
         {
             try
             {
-                if (parameter is PartyRequest request)
+                if (parameter is PartyRequest newRequest)
                 {
                     using var context = new PartyContext();
-                    Helper.UpdateNumberOfHeliumBalloons(request);
-                    context.Request.Add(request);
+                    Helper.UpdateNumberOfHeliumBalloons(newRequest);
+                    context.Request.Add(newRequest);
                     context.SaveChanges();
                     MessageBox.Show("Added successfully");
                 }

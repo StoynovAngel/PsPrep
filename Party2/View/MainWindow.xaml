@@ -1,0 +1,58 @@
+﻿<Window x:Class="Party2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Party2"
+        xmlns:viewModel="clr-namespace:Party2.ViewModel"
+
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Window.DataContext>
+        <viewModel:ViewModelClass/>
+    </Window.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Label Grid.Row="0" Grid.Column="0" Content="{Binding CaptionName}" />
+        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Request.Applicant, Mode=TwoWay}" x:Name="ApIN"/>
+
+        <Label Grid.Row="1" Grid.Column="0" Content="Телефон заявител:" />
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Request.ApplicantPN, Mode=TwoWay}" x:Name="ApIPN"/>
+
+        <Label Grid.Row="2" Grid.Column="0" Content="Име на рожденника:" />
+        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Request.BirthdayPerson, Mode=TwoWay}" x:Name="BDP"/>
+
+        <Label Grid.Row="3" Grid.Column="0" Content="{Binding CaptionAge}" />
+        <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding Request.BirthdayPersonAge, Mode=TwoWay}" x:Name="BDPA"/>
+
+        <Label Grid.Row="4" Grid.Column="0" Content="{Binding CaptionDate}" />
+        <DatePicker Grid.Row="4" Grid.Column="1" SelectedDate="{Binding Request.Birthday, Mode=TwoWay}" x:Name="Bd"/>
+        
+        <Label Grid.Row="5" Grid.Column="0" Content="Дата на парти:" />
+        <DatePicker Grid.Row="5" Grid.Column="1" SelectedDate="{Binding Request.Partydate, Mode=TwoWay}" x:Name="Pd"/>
+
+        <Label Grid.Row="6" Grid.Column="0" Content="Брой балони:" />
+        
+        <ListBox Grid.Row="6" Grid.Column="1" ItemsSource="{Binding Request.Guests}" DisplayMemberPath="GuestName"/>
+
+        <Button Grid.Row="8" Grid.Column="1" Content="Добави заявка"
+                Command="{Binding AddCommand}" CommandParameter="{Binding}" x:Name="btn1"/>
+    </Grid>
+</Window>

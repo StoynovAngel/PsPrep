@@ -48,11 +48,11 @@ public class MusicalVM : INotifyPropertyChanged
                 }
             }
         };
-
         GetNextCommand = new GetNextCommand(this);
     }
 
     public List<MusicalToy> GetMockToys() => _mockToys;
+
     public event PropertyChangedEventHandler? PropertyChanged;
 
     protected virtual void OnPropertyChanged([CallerMemberName] string? propertyName = null)

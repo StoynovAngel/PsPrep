@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<person>
+    <name>Angel</name>
+    <age>10</age>
+    <universityStudent>true</universityStudent>
+</person>

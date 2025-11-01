@@ -1,6 +1,7 @@
 ﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using System.Windows;
 using System.Windows.Input;
 using HotelReservation.Model;
 
@@ -16,7 +17,7 @@ public class ViewModel : INotifyPropertyChanged
         set
         {
             _res = value;
-            OnPropertyChanged(nameof(Reservation));
+            OnPropertyChanged();
         }
     }
     
@@ -58,7 +59,6 @@ public class ViewModel : INotifyPropertyChanged
         OnPropertyChanged(propertyName);
         return true;
     }
-    
 }
 
 public class RelayCommand : ICommand

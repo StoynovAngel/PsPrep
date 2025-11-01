@@ -13,16 +13,6 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <ListBox ItemsSource="{Binding Game.Moves}">
-            <ListBox.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="{Binding StartPos}" Margin="10" />
-                        <TextBlock Text="{Binding EndPos}" Margin="10"/>
-                        <TextBlock Text="{Binding MoveTime, StringFormat={}{0:HH:mm:ss}}" Margin="10"/>
-                    </StackPanel>
-                </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>
+        <ListBox ItemsSource="{Binding Game.Moves}"/>
     </Grid>
 </Window>

@@ -10,6 +10,8 @@ public class MainWindowVM : INotifyPropertyChanged
 {
     private FootballMatch _match;
     public List<FootballMatch> AllMatches { get; set; } = new List<FootballMatch>();
+    
+    // property
     public string WinnerStatus => WhoIsWinning();
 
     public FootballMatch DisplayMatch
@@ -30,9 +32,9 @@ public class MainWindowVM : INotifyPropertyChanged
 
 public MainWindowVM(FootballMatch i)
     {
-        DisplayMatch = i;
         StoreCommand = new ACommand(StoreResult);
         WinCountCommand = new ACommand(ExecuteWinCount);
+        DisplayMatch = i;
     }
 
     private void StoreResult(object obj)
@@ -42,9 +44,8 @@ public MainWindowVM(FootballMatch i)
 
     public string WhoIsWinning()
     {
-        return (_match.ScoreHome > _match.ScoreForeign)
-            ? $"{_match.HomeTeam} is winning"
-            : $"{_match.ForeignTeam} is winning";
+        if (_match.ScoreHome == _match.ScoreForeign) return "Равенство.";
+        return _match.ScoreHome > _match.ScoreForeign ? $"{_match.HomeTeam} is winning" : $"{_match.ForeignTeam} is winning";
     }
     
     private void ExecuteWinCount(object obj)

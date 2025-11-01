@@ -1,0 +1,17 @@
+C:\Users\Angel\Desktop\Projects - Git\PsPrep\FormatDifference\FormatDifference\bin\Debug\net9.0\FormatDifference.exe
+C:\Users\Angel\Desktop\Projects - Git\PsPrep\FormatDifference\FormatDifference\bin\Debug\net9.0\FormatDifference.deps.json
+C:\Users\Angel\Desktop\Projects - Git\PsPrep\FormatDifference\FormatDifference\bin\Debug\net9.0\FormatDifference.runtimeconfig.json
+C:\Users\Angel\Desktop\Projects - Git\PsPrep\FormatDifference\FormatDifference\bin\Debug\net9.0\FormatDifference.dll
+C:\Users\Angel\Desktop\Projects - Git\PsPrep\FormatDifference\FormatDifference\bin\Debug\net9.0\FormatDifference.pdb
+C:\Users\Angel\Desktop\Projects - Git\PsPrep\FormatDifference\FormatDifference\obj\Debug\net9.0\FormatDifference.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Angel\Desktop\Projects - Git\PsPrep\FormatDifference\FormatDifference\obj\Debug\net9.0\FormatDifference.AssemblyInfoInputs.cache
+C:\Users\Angel\Desktop\Projects - Git\PsPrep\FormatDifference\FormatDifference\obj\Debug\net9.0\FormatDifference.AssemblyInfo.cs
+C:\Users\Angel\Desktop\Projects - Git\PsPrep\FormatDifference\FormatDifference\obj\Debug\net9.0\FormatDifference.csproj.CoreCompileInputs.cache
+C:\Users\Angel\Desktop\Projects - Git\PsPrep\FormatDifference\FormatDifference\obj\Debug\net9.0\FormatDifference.sourcelink.json
+C:\Users\Angel\Desktop\Projects - Git\PsPrep\FormatDifference\FormatDifference\obj\Debug\net9.0\FormatDifference.dll
+C:\Users\Angel\Desktop\Projects - Git\PsPrep\FormatDifference\FormatDifference\obj\Debug\net9.0\refint\FormatDifference.dll
+C:\Users\Angel\Desktop\Projects - Git\PsPrep\FormatDifference\FormatDifference\obj\Debug\net9.0\FormatDifference.pdb
+C:\Users\Angel\Desktop\Projects - Git\PsPrep\FormatDifference\FormatDifference\obj\Debug\net9.0\FormatDifference.genruntimeconfig.cache
+C:\Users\Angel\Desktop\Projects - Git\PsPrep\FormatDifference\FormatDifference\obj\Debug\net9.0\ref\FormatDifference.dll
+C:\Users\Angel\Desktop\Projects - Git\PsPrep\FormatDifference\FormatDifference\bin\Debug\net9.0\person.xml
+C:\Users\Angel\Desktop\Projects - Git\PsPrep\FormatDifference\FormatDifference\bin\Debug\net9.0\person.json

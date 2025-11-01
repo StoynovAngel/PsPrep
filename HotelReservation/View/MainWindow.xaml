@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:vm="clr-namespace:HotelReservation.ViewModel"
-        xmlns:co="clr-namespace:HotelReservation.View"
+        xmlns:local="clr-namespace:HotelReservation.View"
         d:DataContext="{d:DesignInstance vm:ViewModel}"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
@@ -16,7 +16,7 @@
         <ContentControl Content="{Binding Reservation}" Grid.Row="0">
             <ContentControl.ContentTemplate>
                 <DataTemplate>
-                    <co:UserControl1 />
+                    <local:UserControl1 />
                 </DataTemplate>
             </ContentControl.ContentTemplate>
         </ContentControl>

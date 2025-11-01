@@ -30,4 +30,10 @@ public class Move
 
     public string StartPos { get; set; }
     public string EndPos { get; set; }
+
+
+    public override string ToString()
+    {
+        return StartPos + " " + EndPos;
+    }
 }
